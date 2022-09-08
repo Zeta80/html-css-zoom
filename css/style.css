@@ -22,7 +22,7 @@ img {
 }
 
 .layer {
-    height: calc(100% - 100px);
+    height: calc(100% - 80px);
     /* DEBUG */
 }
 
@@ -30,7 +30,7 @@ img {
     position: fixed;
     bottom: 0;
     left: 0;
-    height: 100px;
+    height: 80px;
     width: 100%;
     /* z-index: 100; */
     /* DEBUG */
@@ -48,11 +48,14 @@ img {
 
 .flex {
     display: flex;
+}
 
+.space-between {
+    justify-content: space-between;
 }
 
 .container-user {
-    width: 80%;
+    width: 90%;
     /* height: 300px; */
     flex-wrap: wrap;
     justify-content: space-between;
@@ -60,6 +63,12 @@ img {
     margin: 30px auto;
     /* DEBUG */
     border: 1px solid black;
+}
+
+.container-bottom {
+    align-items: center;
+    height: 90%;
+    text-align: center;
 }
 
 /* IMAGE-USER */
@@ -70,4 +79,25 @@ img {
     font-size: .9em;
     color: white;
     background-color: rgb(0, 0, 0);
+}
+
+/* TOOLBAR ICONS */
+i {
+    display: block;
+}
+
+.icons i {
+    font-size: 2rem;
+}
+
+.angle-arrow {
+    font-size: 20px;
+    transform: translateY(30%);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+.mic-webcam {
+    margin-left: 10px;
 }
