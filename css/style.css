@@ -17,13 +17,12 @@ img {
     width: 100%;
     height: 100vh;
     overflow: auto;
+    background-color: #000;
     /* DEBUG */
-    background-color: aqua;
 }
 
 .layer {
     height: calc(100% - 80px);
-    /* DEBUG */
 }
 
 .toolbar {
@@ -32,9 +31,8 @@ img {
     left: 0;
     height: 80px;
     width: 100%;
+    background-color: #222;
     /* z-index: 100; */
-    /* DEBUG */
-    background-color: grey;
 }
 
 /* UTILITIES */
@@ -69,6 +67,7 @@ img {
     align-items: center;
     height: 90%;
     text-align: center;
+    color: white;
 }
 
 /* IMAGE-USER */
@@ -87,17 +86,52 @@ i {
 }
 
 .icons i {
-    font-size: 2rem;
+    font-size: 1.7rem;
+    position: relative;
 }
 
 .angle-arrow {
-    font-size: 20px;
+    font-size: 15px;
     transform: translateY(30%);
     margin-left: 10px;
     margin-right: 10px;
+
 }
+
+.option .icons {
+    margin-right: 15px;
+}
+
+.option .angle-arrow {
+    margin-right: 20px;
+    margin-left: 5px;
+}
+
 
 
 .mic-webcam {
     margin-left: 10px;
+}
+
+.end-transmit {
+    padding: 1em;
+    background-color: #5555;
+    color: red;
+}
+
+/* HOVER */
+
+.icons i:hover {
+    color: #4ac700;
+    cursor: pointer;
+}
+
+.angle-arrow:hover {
+    color: #4ac700;
+    cursor: pointer;
+}
+
+.end-transmit:hover {
+    background-color: black;
+    cursor: pointer;
 }
