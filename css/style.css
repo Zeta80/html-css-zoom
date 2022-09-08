@@ -56,11 +56,10 @@ img {
     width: 90%;
     /* height: 300px; */
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 5px;
     margin: 30px auto;
-    /* DEBUG */
-    border: 1px solid black;
+    padding-bottom: 90px;
 }
 
 .container-bottom {
@@ -77,7 +76,7 @@ img {
     padding: 5px 5px;
     font-size: .9em;
     color: white;
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* TOOLBAR ICONS */
@@ -88,6 +87,11 @@ i {
 .icons i {
     font-size: 1.7rem;
     position: relative;
+}
+
+.icons p {
+    font-size: 0.9rem;
+    margin-top: 5px;
 }
 
 .angle-arrow {
@@ -107,14 +111,12 @@ i {
     margin-left: 5px;
 }
 
-
-
 .mic-webcam {
     margin-left: 10px;
 }
 
 .end-transmit {
-    padding: 1em;
+    padding: 1.5em;
     background-color: #5555;
     color: red;
 }
