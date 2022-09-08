@@ -22,15 +22,17 @@ img {
 }
 
 .layer {
-    height: calc(100% - 80px);
+    height: calc(100% - 100px);
     /* DEBUG */
 }
 
 .toolbar {
-    height: 80px;
-    width: 100%;
     position: fixed;
-    z-index: 100;
+    bottom: 0;
+    left: 0;
+    height: 100px;
+    width: 100%;
+    /* z-index: 100; */
     /* DEBUG */
     background-color: grey;
 }
@@ -53,19 +55,19 @@ img {
     width: 80%;
     /* height: 300px; */
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 5px;
-    margin: 0 auto;
-    transform: translateY(15%);
+    margin: 30px auto;
     /* DEBUG */
     border: 1px solid black;
 }
 
 /* IMAGE-USER */
 .name-user {
-    left: 0;
-    bottom: 10px;
+    left: 0px;
+    bottom: 15px;
+    padding: 5px 5px;
     font-size: .9em;
     color: white;
-    background-color: #5555;
+    background-color: rgb(0, 0, 0);
 }
