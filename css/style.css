@@ -5,9 +5,18 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
 .player-wrapper {
     width: 100%;
     height: 100vh;
+    overflow: auto;
     /* DEBUG */
     background-color: aqua;
 }
@@ -19,6 +28,44 @@
 
 .toolbar {
     height: 80px;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
     /* DEBUG */
     background-color: grey;
+}
+
+/* UTILITIES */
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.flex {
+    display: flex;
+
+}
+
+.container-user {
+    width: 80%;
+    /* height: 300px; */
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 5px;
+    margin: 0 auto;
+    transform: translateY(15%);
+    /* DEBUG */
+    border: 1px solid black;
+}
+
+/* IMAGE-USER */
+.name-user {
+    left: 0;
+    bottom: 10px;
+    font-size: .9em;
+    color: white;
+    background-color: #5555;
 }
